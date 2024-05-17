@@ -27,6 +27,16 @@ price1 = float(input("Enter price of pizza 1: "))
 r2 = float(input("Enter radius of pizza 2: "))
 price2 = float(input("Enter price of pizza 2: "))
 
-print(f"Pizza 1 with radius {r1} cm and price {price1} CZK has area/price ratio {(PI * (r1 ** 2)) / price1:.5f} cm2/CZK")
-print(f"Pizza 2 with radius {r2} cm and price {price2} CZK has area/price ratio {(PI * (r2 ** 2)) / price2:.5f} cm2/CZK")
-print(f"{((PI * (r1 ** 2)) / price1) > ((PI * (r2 ** 2)) / price2)}")
+ratio1 = (PI * (r1 ** 2)) / price1
+ratio2 = (PI * (r2 ** 2)) / price2
+
+print(f"Pizza 1 with radius {r1} cm and price {price1} CZK has area/price ratio {ratio1:.5f} cm2/CZK")
+print(f"Pizza 2 with radius {r2} cm and price {price2} CZK has area/price ratio {ratio2:.5f} cm2/CZK")
+
+# Rozhodnout, která pizza má lepší poměr plocha/cena
+if ratio1 > ratio2:
+    print("Beru pizzu 1")
+elif ratio1 == ratio2:
+    print("Obě pizzy vychází stejně")
+else:
+    print("Beru pizzu 2")
