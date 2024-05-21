@@ -22,6 +22,31 @@ TODO: Největší hodnota
 Uživatel bude zadávat čísla z klávesnice (0 končí).
 Vypiště nejvyšší hodnotu.
 """
+number = float(input("Zadej číslo [0 pro konec] "))
+highest = None
+while number != 0:
+    print(f"Zadané číslo: {number}")
+    if highest is None or number > highest:
+        highest = number
+    number = float(input("Zadej číslo [0 pro konec] "))
+
+if highest is None:
+    print("Nebylo zadáno žádné číslo")
+else:
+    print(f"Nejvyšší zadané číslo bylo: {highest}")
+
+
+"""
+num1 = "15"
+print(type(num1))
+if isinstance(num1, int):
+    print(f"{num1} je celé číslo")
+elif isinstance(num1, float):
+    print(f"{num1} je desetinné číslo")
+else:
+    print(f"{num1} je type {type(num1)}")
+"""
+
 
 """
 TODO: Druhá největší hodnota
