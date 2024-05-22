@@ -55,7 +55,7 @@ Deficientní číslo: https://cs.wikipedia.org/wiki/Deficientn%C3%AD_%C4%8D%C3%A
 Task 5: Temperature (Teplota)
 Uživatel zadá teplotu (desetinné číslo) ve °C a program tuto teplotu převede na °F a °K.
 
-Banus:
+Bonus:
 Uživatel zadá dvě teploty ve °C (dolní a horní mez) a program vypočítá °F a °K v daném rozmezí (krok 1 °C).
 Např: uživatel zadá hodnoty 0 a 10, program vypíše:
 °C    °F    °K
