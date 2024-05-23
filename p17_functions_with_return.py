@@ -22,6 +22,8 @@ print(f"5! = {fact_5}, 7! = {fact_7}, 5! + 7! = {fact_5 + fact_7}")
 
 
 def is_prime(n: int) -> bool:
+    if n == 2:
+        return True
     if n % 2 == 0:
         return False
     for i in range(3, n, 2):
@@ -75,5 +77,3 @@ print(f"Největší společný dělitel čísel {num1} a {num2} je {gcd(num1, nu
 
 
 # TODO: Task lcm = nejmenší společný násobek: https://cs.wikipedia.org/wiki/Nejmen%C5%A1%C3%AD_spole%C4%8Dn%C3%BD_n%C3%A1sobek
-
-
