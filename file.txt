@@ -1,0 +1,4 @@
+Hello, World!
+Druhı øádek.
+Tøetí øádek.
+Ètvrtı øádek.
